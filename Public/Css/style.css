@@ -1,11 +1,28 @@
 
+/* Finish page */
+.finishDiv{
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-size: 40px;
+}
+.finishDiv a {
+    display: block;
+    padding: 12px;
+    text-decoration: none;
+    width: 8%;
+    border-radius: 8px;
+    margin-left: auto;
+    margin-right: auto;
+}
+/* Header */
 header{
     padding: 18px;
     text-align: center;
     background: #1abc9c;
     color: white;
 }
-
 header p {
     font-size: 18px;
 }
