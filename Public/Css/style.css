@@ -1,3 +1,4 @@
+
 /* Finish page */
 .finishDiv{
     width: 60%;
@@ -14,4 +15,15 @@
     border-radius: 8px;
     margin-left: auto;
     margin-right: auto;
+}
+
+header{
+    padding: 18px;
+    text-align: center;
+    background: #1abc9c;
+    color: white;
+}
+
+header p {
+    font-size: 18px;
 }
