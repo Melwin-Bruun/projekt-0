@@ -4,7 +4,7 @@ require "sinatra"
 #and saves them in an array
 
 #checks class
-post '/start' do
+post('/start') do
     arrayname[grade].each do |grade|
         if 
 end
