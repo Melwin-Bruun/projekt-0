@@ -19,4 +19,4 @@ db.execute("CREATE TABLE 'student' (
 	PRIMARY KEY('id' AUTOINCREMENT))"
 )
 
-db.execute("INSERT INTO STUDENT ('firstname', 'lastname') VALUES('senap', 'ketchup')")
+db.execute("INSERT INTO STUDENT ('firstname', 'lastname,' 'picture,' 'funfact,' 'grade,') VALUES('Erik', 'Albinson', 'erik.jpg,' 'funfact,' 'TE4,')")
