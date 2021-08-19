@@ -37,13 +37,16 @@ header .appname{
     align-items: flex-start;
 }
 
-/* Wrong */
+/* Wrong / Right / Guess*/
 
 nav {
     font-size: 24px;
 }
 .wrong_body{
     background-color: firebrick;
+}
+.right_body{
+    background-color: forestgreen;
 }
 main {
     text-align: center;
