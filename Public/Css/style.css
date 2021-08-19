@@ -14,10 +14,10 @@ body{
     display: block;
     padding: 12px;
     text-decoration: none;
-    width: 8%;
     border-radius: 8px;
     margin-left: auto;
     margin-right: auto;
+    background-color: whitesmoke;
 }
 /* Header */
 header{
