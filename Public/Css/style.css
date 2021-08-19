@@ -84,7 +84,6 @@ main .mugshot{
     padding: 10px;
     box-shadow: 3px 5px;
     border-radius: 8px;
-
 }
 .startDiv button {
     height: 40%;
@@ -95,4 +94,22 @@ main .mugshot{
     box-shadow: 2px 4px;
     border: 1px;
     border-radius: 5px;
+}
+/* Guess */
+.guess_answer{
+    width: 35%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    font-size: 32px;
+}
+.guess_answer input {
+    width: 69%;
+    font-size: 24;
+    font-family: "Times New Roman", Times, serif;
+    border: 1px solid;
+    padding: 10px;
+    box-shadow: 3px 5px;
+    border-radius: 8px;
+    margin-bottom: 10px;
 }
