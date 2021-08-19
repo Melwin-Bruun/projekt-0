@@ -23,6 +23,8 @@ GEM
       rack (~> 2.2)
       rack-protection (= 2.1.0)
       tilt (~> 2.0)
+    sinatra-flash (0.3.0)
+      sinatra (>= 1.0.0)
     sqlite3 (1.4.2)
     thin (1.8.1)
       daemons (~> 1.0, >= 1.0.9)
@@ -36,6 +38,7 @@ PLATFORMS
 DEPENDENCIES
   rerun
   sinatra
+  sinatra-flash
   sqlite3
   thin
 

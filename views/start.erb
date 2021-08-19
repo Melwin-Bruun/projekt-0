@@ -21,11 +21,14 @@
         </div>
     </header>
     <div class="startDiv">
-        <form action="../functions.rb" method="POST">
+        <form action="/" method="POST">
             <label for="class_name">Please enter your class</label>
             <input type="text" id="class_name" name="class_name" required>
             <button typ="submit" value="Submit">Search</button>
-            <p>This class does not exist. Try another class!</p>
+            
+            <%if flash[:error]%>
+            <p><%= flash[:error]%></p>
+            <%end%>
         </form>
     </div>
 
