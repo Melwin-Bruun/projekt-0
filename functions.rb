@@ -6,12 +6,14 @@ get '/' do
     erb :start
 end
 
-post('/start') do
+post '/' do
     grade_search = params[:class_name] 
-    grade = db.execute("SELECT * FROM students WHERE grade = ?", [grade_search])
-    if grade_search == grade 
-        redirect '/guess'
+    db = connect_to_db()
+    grade = db.execute("SELECT * FROM student WHERE grade = ?", [grade_search])
+
+    if grade == nil
+        "hello"
     else 
-       hej
+        erb :guess
     end
 end
