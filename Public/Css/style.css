@@ -84,6 +84,7 @@ main .mugshot{
     padding: 10px;
     box-shadow: 3px 5px;
     border-radius: 8px;
+    margin-bottom: 24px;
 }
 .startDiv button {
     height: 40%;
