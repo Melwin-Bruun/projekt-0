@@ -15,3 +15,21 @@ post('/start') do
        hej
     end
 end
+
+
+
+get '/wrong' do
+    erb :wrong
+end
+get '/start' do
+    erb :start
+end
+get '/guess' do
+    erb :guess
+end
+get '/finish' do
+    erb :finish
+end
+get '/correct' do
+    erb :correct
+end
