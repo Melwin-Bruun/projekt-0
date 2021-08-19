@@ -9,6 +9,7 @@ get '/' do
 end
 
 post '/' do
+    @guess_count
     grade_search = params[:class_name] 
     db = connect_to_db()
     grade = db.execute("SELECT * FROM student WHERE grade = ?", [grade_search])
@@ -18,6 +19,7 @@ post '/' do
         redirect back
     else 
         @grade = grade
+        @guess_count = -1
         erb :guess
     end
 end

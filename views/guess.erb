@@ -23,16 +23,18 @@
         <h1>class **</h1>
     </nav>
     <main>
-        <%student_pic = @grade[0]['picture']%>
+        <% @guess_count += 1%>
+        <%student_pic = @grade[@guess_count]['picture']%>
 
         <img class="mugshot" src="misc/<%=student_pic%>" alt="picture">
-        <div class="guess_answer">
+        <form class="guess_answer">
             <label>Firstname</label>
             <input type="text">
             <label>Lastname</label>
             <input type="text">
-        </div>
-        <a class="button"  href="">Next</a>
+            <button class="guess_button">Next</button>
+        </form>
+        <%# <a class="button" href="">Next</a> %>
     </main>
 
 
