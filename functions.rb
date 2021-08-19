@@ -22,11 +22,36 @@ post '/' do
 end
 
 
-post '/guess' do
-    
-end
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+get '/wrong' do 
+    erb :wrong
+end 
+
+
+get '/start' do 
+    erb :start
+end 
+
 get '/guess' do
-    ff
     erb :guess
 end
 get '/finish' do
