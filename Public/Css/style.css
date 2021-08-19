@@ -14,10 +14,10 @@ body{
     display: block;
     padding: 12px;
     text-decoration: none;
-    width: 8%;
     border-radius: 8px;
     margin-left: auto;
     margin-right: auto;
+    background-color: whitesmoke;
 }
 /* Header */
 header{
@@ -42,6 +42,9 @@ header .appname{
 nav {
     font-size: 24px;
 }
+.wrong_body{
+    background-color: firebrick;
+}
 main {
     text-align: center;
     font-size: 24px;
@@ -54,6 +57,7 @@ main .button{
     border-radius: 8px;
     margin-left: auto;
     margin-right: auto;
+    background-color: whitesmoke;
 }
 
 main .mugshot{
@@ -75,7 +79,8 @@ main .mugshot{
     font-family: "Times New Roman", Times, serif;
     border: 1px solid;
     padding: 10px;
-    box-shadow: 3px 7px;
+    box-shadow: 3px 5px;
+    border-radius: 8px;
 
 }
 .startDiv button {
@@ -86,5 +91,5 @@ main .mugshot{
     padding: 5px;
     box-shadow: 2px 4px;
     border: 1px;
-
+    border-radius: 5px;
 }
