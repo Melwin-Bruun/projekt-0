@@ -20,3 +20,8 @@ db.execute("CREATE TABLE 'student' (
 )
 
 db.execute("INSERT INTO STUDENT ('firstname', 'lastname', 'picture', 'funfact', 'grade') VALUES('Erik', 'Albinson', 'erik.jpg', 'funfact', 'TE4')")
+db.execute("INSERT INTO STUDENT ('firstname', 'lastname', 'picture', 'funfact', 'grade') VALUES('Linus', 'Björkén', 'linus.jpg', 'funfact', 'TE4')")
+db.execute("INSERT INTO STUDENT ('firstname', 'lastname', 'picture', 'funfact', 'grade') VALUES('Linus', 'Sjunnesson', 'linuss.jpg', 'funfact', 'TE4')")
+db.execute("INSERT INTO STUDENT ('firstname', 'lastname', 'picture', 'funfact', 'grade') VALUES('Evelina', 'Jansén', 'eve.jpg', 'funfact', 'TE4')")
+db.execute("INSERT INTO STUDENT ('firstname', 'lastname', 'picture', 'funfact', 'grade') VALUES('Evelina', 'Karlsson', 'evi.jpg', 'funfact', 'TE4')")
+db.execute("INSERT INTO STUDENT ('firstname', 'lastname', 'picture', 'funfact', 'grade') VALUES('Tobbe', 'Kaktus', 'tobbe.jpg', 'funfact', 'TE4')")
