@@ -1,5 +1,5 @@
 require "sinatra"
-
+require_relative "DB/seed.rb"
 #Fetches the class from database
 #and saves them in an array
 post('/start') do
@@ -11,3 +11,11 @@ post('/start') do
         #skriv ut felmeddelande
     end
     
+
+
+#checks class
+post('/start') do
+    arrayname[grade].each do |grade|
+        if 
+end
+
