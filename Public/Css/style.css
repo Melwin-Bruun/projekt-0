@@ -1,4 +1,7 @@
-
+body{
+    background-color: rgb(115,6,114);
+    color: whitesmoke;
+}
 /* Finish page */
 .finishDiv{
     width: 60%;
@@ -20,8 +23,9 @@
 header{
     padding: 18px;
     text-align: center;
-    background: #1abc9c;
+    background: rgb(175,8,134);
     color: white;
+    margin-bottom: 2rem;
 }
 header p {
     font-size: 18px;
