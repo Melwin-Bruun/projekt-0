@@ -21,27 +21,6 @@ post '/' do
     end
 end
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 get '/wrong' do 
     erb :wrong
 end 
