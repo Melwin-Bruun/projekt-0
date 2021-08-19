@@ -23,7 +23,9 @@
         <h1>class **</h1>
     </nav>
     <main>
-        <img class="mugshot" src="misc/" alt="picture">
+        <%student_pic = @grade[0]['picture']%>
+
+        <img class="mugshot" src="misc/<%=student_pic%>" alt="picture">
         <div class="guess_answer">
             <label>Firstname</label>
             <input type="text">
