@@ -39,9 +39,19 @@ get '/start' do
     erb :start
 end 
 
-get '/guess/:id' do
+get '/guess/' do
     erb :guess
 end
+
+post '/quess/:id' do
+    #hämta student från db
+    #jämför med vad som finns i params
+
+    #om rätt
+    #hämta ny student från db
+
+end
+
 get '/finish' do
     erb :finish
 end
