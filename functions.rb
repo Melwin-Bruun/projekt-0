@@ -39,7 +39,7 @@ get '/start' do
     erb :start
 end 
 
-get '/guess/' do
+get '/guess' do
     erb :guess
 end
 
