@@ -62,7 +62,16 @@ main .button{
     margin-right: auto;
     background-color: whitesmoke;
 }
-
+.next_button{
+    height: 40%;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 25px;
+    background-color: white;
+    padding: 5px;
+    box-shadow: 2px 4px;
+    border: 1px;
+    border-radius: 5px;
+}
 main .mugshot{
     height: 27rem;
     width: 20rem;
