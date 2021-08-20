@@ -44,6 +44,16 @@ post '/guess/:klass_string/:id' do
     @correct_student = db.execute("SELECT * FROM student WHERE id = ?", [@current_student_id])
     
     if @correct_student[0]['firstname'] == @firstname_guess && @correct_student[0]['lastname'] == @lastname_guess
+        @klass_string = @klass_string.split(',')
+        p @klass_string
+        if @klass_string.include?(@current_student_id)
+            @klass_string.delete_at(@current_student_id.to_i-1)
+            @current_student_id = @klass_string.sample
+            @student_ids_string = @klass_string.join(",")
+            p @student_ids_string
+
+        end 
+        p @current_student_id
         erb :correct
     else
         erb :wrong
