@@ -15,8 +15,6 @@ get '/' do
     erb :start
 end
 post '/' do
-    p 'hejjj'
-    class_guess = params[:class_name]
     class_guess = params[:class_name].upcase
     student_ids_string = []
     db = connect_to_db()
@@ -53,7 +51,9 @@ end
 
 
 post '/new_student' do
-    "Hello World"
+    db = connect_to_db()
+    students = db.execute("SELECT id FROM student WHERE grade = ?", [class_guess])
+    if !students.any?
 end
 
 
