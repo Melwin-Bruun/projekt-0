@@ -19,7 +19,7 @@ post '/' do
         redirect back
     else 
         @grade = grade
-        @guess_count = -1
+        @guess_count = 0
         erb :guess
     end
 end
@@ -43,3 +43,6 @@ get '/correct' do
     erb :correct
 end
 
+post '/next' do
+    redirect ('/guess')
+end
