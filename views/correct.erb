@@ -30,7 +30,9 @@
             <p><%=@correct_student[0]['firstname']%></p>
             <p><%=@correct_student[0]['lastname']%></p>
         </div>
-        <a class="button"  href="">Next</a>
+        <form action="/" method="POST">
+            <button type="submit" class="next_button">Next</button>
+        </form>
     </main>
 </body>
 </html>
