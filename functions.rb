@@ -58,7 +58,7 @@ post '/next_student/:klass_string' do
         redirect till finsih
     else
         p 'guess'
-
+    end
 end
 
 
