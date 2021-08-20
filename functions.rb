@@ -53,15 +53,12 @@ end
 
 post '/next_student/:klass_string' do
     db = connect_to_db()
-    # students = db.execute("SELECT id FROM student WHERE grade = ?", [class_guess])
-    # if !students.any?
-    #     p 'finish'
-    #     #redirect till finsih
-    # else
+    students = db.execute("SELECT id FROM student WHERE grade = ?", [class_guess])
+    if !students.any?
+        redirect till finsih
+    else
         p 'guess'
-        #erb :guess
-    
-#end
+
 end
 
 
