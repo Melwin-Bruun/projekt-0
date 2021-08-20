@@ -20,11 +20,11 @@
         </div>
     </header>
     <nav>
-        <h1>class <%=@student['grade']%></h1>
+        <h1>class </h1>
     </nav>
     <main>
     
-        <img class="mugshot" src="misc/<%=@student['picture']%>" alt="picture">
+        <img class="mugshot" src="misc/<%=@student[0]['picture']%>" alt="picture">
         <form class="guess_answer" action="/guess/#{@student['id']}" method="post">
             <label>Firstname</label>
             <input type="text" name="firstname">
