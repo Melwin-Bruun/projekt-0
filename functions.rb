@@ -54,13 +54,21 @@ post '/guess/:klass_string/:id' do
 
         end 
         p @current_student_id
-        erb :correct
+        redirect "/correct/#{@student_ids_string}"
     else
-        erb :wrong
+        redirect "/wrong/#{@klass_string}/#{@correct_student[0]['id']}"
     end
 end
 
+get "/wrong/:klass_string/:student_id" do
+    @student_id = params[:student_id]
+    @klass_string = params[:klass_string]
+    db = connect_to_db
+    @correct_student = db.execute("SELECT * FROM student WHERE id = ?", [@student_id])
 
+
+    erb :wrong
+end
 post '/next_student/:klass_string' do
     @klass_string = params[:klass_string]
     student_id_array = @klass_string.split(',')
@@ -72,11 +80,8 @@ post '/next_student/:klass_string' do
     if !student.any?
         erb :finish
     else
-        p students
-        @student = students.sample
-        p @students
-        p @student[0][3]
-        erb :guess
+        @student = [students.sample]
+        redirect "/guess/#{@klass_string}/#{student_id}"
     end
 end
 

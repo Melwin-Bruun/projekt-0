@@ -12,11 +12,6 @@
         <div class="appname">
             <h1>W.T.F</h1>
             <p>What´s Their Face</p>
-            <%# <a href="wrong">Wrong</a>
-            <a href="start">Start</a>
-            <a href="guess">Guess</a>
-            <a href="finish">Finish</a>
-            <a href="correct">Correct</a> %>
         </div>
     </header>
 <nav>
@@ -30,11 +25,6 @@
         <h2>This is</h2>
         <p><%=@correct_student[0]['firstname']%></p>
         <p><%=@correct_student[0]['lastname']%></p>
-    </div>
-    <div class="wrong_answer">
-        <h2>Your guess</h2>
-        <p><%=@firstname_guess%></p>
-        <p><%=@lastname_guess%></p>
     </div>
     <form action="/next_student/<%=@klass_string%>" method="POST">
         <button type="submit" class="next_button">Next</button>
