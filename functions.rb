@@ -17,6 +17,7 @@ end
 post '/' do
     p 'hejjj'
     class_guess = params[:class_name]
+    class_guess = params[:class_name].upcase
     student_ids_string = []
     db = connect_to_db()
     students = db.execute("SELECT id FROM student WHERE grade = ?", [class_guess])
@@ -36,8 +37,8 @@ post '/' do
 end
 post '/guess/:id' do
     @current_student_id = params[:id]
-    @firstname_guess = params[:firstname]
-    @lastname_guess = params[:lastname]
+    @firstname_guess = params[:firstname].capitalize
+    @lastname_guess = params[:lastname].capitalize
 
     db = connect_to_db()
 
