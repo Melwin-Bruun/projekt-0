@@ -20,7 +20,7 @@
         </div>
     </header>
 <nav>
-    <h1>class <%=@correct_student[0]['grade']%></h1>
+    <h1>Class <%=@correct_student[0]['grade']%></h1>
 </nav>
 
 <main>
@@ -36,7 +36,7 @@
         <p><%=@firstname_guess%></p>
         <p><%=@lastname_guess%></p>
     </div>
-    <form action="/" method="POST">
+    <form action="/new_student" method="POST">
         <button type="submit" class="next_button">Next</button>
     </form>
 </main>
