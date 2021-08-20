@@ -33,7 +33,8 @@ post '/' do
         erb :guess
     end
 end
-post '/guess/:id' do
+post '/guess/:klass_string/:id' do
+    @klass_string = params[:klass_string]
     @current_student_id = params[:id]
     @firstname_guess = params[:firstname].capitalize
     @lastname_guess = params[:lastname].capitalize
@@ -50,10 +51,17 @@ post '/guess/:id' do
 end
 
 
-post '/new_student' do
+post '/next_student/:klass_string' do
     db = connect_to_db()
-    students = db.execute("SELECT id FROM student WHERE grade = ?", [class_guess])
-    if !students.any?
+    # students = db.execute("SELECT id FROM student WHERE grade = ?", [class_guess])
+    # if !students.any?
+    #     p 'finish'
+    #     #redirect till finsih
+    # else
+        p 'guess'
+        #erb :guess
+    
+#end
 end
 
 

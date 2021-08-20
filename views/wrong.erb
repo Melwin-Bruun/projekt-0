@@ -36,7 +36,7 @@
         <p><%=@firstname_guess%></p>
         <p><%=@lastname_guess%></p>
     </div>
-    <form action="/new_student" method="POST">
+    <form action="/next_student/<%=@klass_string%>" method="POST">
         <button type="submit" class="next_button">Next</button>
     </form>
 </main>
