@@ -69,6 +69,7 @@ post '/next_student/:klass_string' do
     if !students.any?
         redirect till finsih
     else
+
         erb :guess
     end 
 
