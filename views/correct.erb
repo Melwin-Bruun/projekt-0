@@ -24,11 +24,11 @@
     </nav>
     <main>
         <h1>Correct!</h1>
-        <img class="mugshot" src="../Public/Misc/Lady-unsplash.jpg" alt="old asian lady">
+        <img class="mugshot" src="misc/<%=@correct_student[0]['picture']%>" alt="mugshot">
         <div class="Right_answer">
             <h2>This is</h2>
-            <p>old asian</p>
-            <p>lady</p>
+            <p><%=@correct_student[0]['firstname']%></p>
+            <p><%=@correct_student[0]['lastname']%></p>
         </div>
         <a class="button"  href="">Next</a>
     </main>

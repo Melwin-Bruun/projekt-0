@@ -25,20 +25,18 @@
 
 <main>
     <h1>Wrong!</h1>
-    <img class="mugshot" src="../Public/Misc/Lady-unsplash.jpg" alt="old asian lady">
+    <img class="mugshot" src="misc/<%=@correct_student[0]['picture']%>" alt="mugshot">
     <div class="Right_answer">
         <h2>This is</h2>
-        <p>old asian</p>
-        <p>lady</p>
+        <p><%=@correct_student[0]['firstname']%></p>
+        <p><%=@correct_student[0]['lastname']%></p>
     </div>
     <div class="wrong_answer">
         <h2>Your guess</h2>
-        <p>young american</p>
-        <p>man</p>
+        <p><%=@firstname_guess%></p>
+        <p><%=@lastname_guess%></p>
     </div>
     <a class="button"  href="">Next</a>
 </main>
-
-
 </body>
 </html>

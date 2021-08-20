@@ -24,8 +24,8 @@
     </nav>
     <main>
     
-        <img class="mugshot" src="misc/<%=@student[0]['picture']%>" alt="picture">
-        <form class="guess_answer" action="/guess/#{@student['id']}" method="post">
+        <img class="mugshot" src="misc/<%=@student[0]['picture']%>" alt="mugshot">
+        <form class="guess_answer" action="/guess/<%=@student[0]['id']%>" method="post">
             <label>Firstname</label>
             <input type="text" name="firstname">
             <label>Lastname</label>

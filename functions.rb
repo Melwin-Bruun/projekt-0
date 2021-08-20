@@ -33,6 +33,21 @@ post '/' do
         erb :guess
     end
 end
+post '/guess/:id' do
+    @current_student_id = params[:id]
+    @firstname_guess = params[:firstname]
+    @lastname_guess = params[:lastname]
+
+    db = connect_to_db()
+
+    @correct_student = db.execute("SELECT * FROM student WHERE id = ?", [@current_student_id])
+    
+    if @correct_student[0]['firstname'] == @firstname_guess && @correct_student[0]['lastname'] == @lastname_guess
+        erb :correct
+    else
+        erb :wrong
+    end
+end
 
 
 
