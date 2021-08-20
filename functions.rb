@@ -16,7 +16,6 @@ get '/' do
 end
 post '/' do
     p 'hejjj'
-    class_guess = params[:class_name]
     class_guess = params[:class_name].upcase
     student_ids_string = []
     db = connect_to_db()
