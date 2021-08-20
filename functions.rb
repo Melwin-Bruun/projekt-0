@@ -52,12 +52,21 @@ end
 
 
 post '/next_student/:klass_string' do
+    @klass_string = params[:klass_string]
+    student_id_array = @klass_string.split(',')
     db = connect_to_db()
-    students = db.execute("SELECT id FROM student WHERE grade = ?", [class_guess])
-    if !students.any?
-        redirect till finsih
+    student_id = student_id_array.first
+
+    student = db.execute("SELECT * FROM student WHERE id = ?", [student_id])
+    students = db.execute("SELECT * FROM student WHERE grade = ?", [student[0]['grade']])
+    if !student.any?
+        erb :finish
     else
-        p 'guess'
+        p students
+        @student = students.sample
+        p @students
+        p @student[0][3]
+        erb :guess
     end
 end
 
