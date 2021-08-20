@@ -15,6 +15,7 @@ get '/' do
     erb :start
 end
 post '/' do
+    p 'hejjj'
     class_guess = params[:class_name]
     student_ids_string = []
     db = connect_to_db()
