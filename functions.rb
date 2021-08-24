@@ -17,7 +17,7 @@ end
 post '/' do
     class_guess = params[:class_name].upcase
     student_ids_string = []
-    db = connect_to_db()
+    db = connect_to_db() 
     students = db.execute("SELECT id FROM student WHERE grade = ?", [class_guess])
 
     if !students.any?
