@@ -6,6 +6,8 @@ require 'sqlite3'
 #and saves them in an array
 enable :sessions
 
+
+# TODO fix this shit
 def connect_to_db()
         db = SQLite3::Database.new('DB/database.db')
         db.results_as_hash = true 
